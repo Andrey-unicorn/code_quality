@@ -362,7 +362,7 @@ exports.cacheToken = async (token) => {
 exports.getCustomerProfileByEmail = async (email) => {
 
     const UserIdsEnabled = await isUserIdsEnabled();
-    console.log('is guestid flag enabled:', UserIdsEnabled);
+    console.log('is guestidd flag enabled:', UserIdsEnabled);
     if (UserIdsEnabled) {
         const dbPools = await getPool();
         const normalizedEmail = email.trim().toLowerCase();
